@@ -1,0 +1,132 @@
+.contacts {
+  width: 50%;
+  max-width: 683px;
+  margin-right: auto;
+  padding: 58px 120px 44px;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+    margin-right: 0;
+    padding: 57px 0 40px 129px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 65px 0 40px;
+    padding: 0 15px;
+  }
+}
+
+.contacts__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts__line {
+  content: "";
+  width: 1px;
+  height: 102px;
+  border-right: 1px solid #74819c;
+  padding-left: 27px;
+  margin-top: 8px;
+
+  @media (max-width: $vp-1199) {
+    height: 129px;
+    margin-top: 5px;
+    padding-left: 8px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.contacts h2 {
+  font: {
+    family: $alumni-sans-600;
+    size: 54px;
+  }
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  padding-bottom: 41px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    padding: 0 0 31px 4px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 32px;
+    }
+    line-height: 35px;
+    padding: 0 0 39px;
+  }
+}
+
+.contacts__list h3 {
+  font: {
+    family: $roboto-condensed-700;
+    size: 16px;
+  }
+  line-height: 24px;
+  padding-bottom: 2px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+}
+
+.contacts__list li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 25px;
+  }
+}
+
+.contacts__list span,
+.contacts__list a {
+  font: {
+    family: $roboto-condensed-400;
+    size: 14px;
+  }
+  line-height: 21px;
+  cursor: default;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+  }
+}
+
+.contacts__list:first-child {
+  padding-left: 4px;
+
+  @media (max-width: $vp-767) {
+    padding-left: 0;
+  }
+}
+
+.contacts__list:last-child {
+  padding-left: 58px;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 26px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 0;
+  }
+}

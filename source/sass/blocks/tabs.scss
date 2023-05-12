@@ -1,0 +1,254 @@
+.tabs__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__btn {
+  position: relative;
+  font: {
+    family: $roboto-condensed-400;
+    size: 20px;
+  }
+  line-height: 30px;
+  color: $color-sapphire-rgba;
+  padding: 0 24px 10px 22px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  cursor: pointer;
+
+  &.active {
+    color: $color-sapphire;
+  }
+
+  &.no-js {
+    border-bottom: 2px solid $color-grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    -moz--transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    background: $color-crimson;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  @media (max-width: $vp-1199) {
+    font: {
+      size: 18px;
+    }
+    line-height: 27px;
+    padding: 0 27px 11px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 16px;
+    }
+    padding: 0 23px 12px;
+  }
+}
+
+.tabs__nav a:first-child {
+  padding-left: 0;
+}
+
+.tabs__nav a:last-child {
+  padding-right: 0;
+}
+
+.tabs__list {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 148px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0;
+  }
+
+  &.active {
+    display: grid;
+  }
+
+  &.no-js {
+    display: grid;
+  }
+}
+
+.tabs__list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-default-white;
+  padding: 57px 71px 62px;
+
+  @media (max-width: $vp-1199) {
+    padding: 56px 113px 63px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 44px 37px 49px;
+  }
+}
+
+.tabs__wrapper {
+  padding: 6px;
+  margin-bottom: 40px;
+  background: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 37px;
+  }
+
+  @include hover-focus {
+    padding: 6px;
+    background: $gradient-text;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus-within {
+    padding: 6px;
+    background: $gradient-text;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.tabs__list h2 {
+  font: {
+    family: $roboto-condensed-700;
+    size: 26px;
+  }
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 11px;
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 22px;
+    }
+    line-height: 24px;
+  }
+}
+
+.tabs__list p {
+  font: {
+    family: $roboto-condensed-400;
+    size: 16px;
+  }
+  line-height: 24px;
+  color: $color-catalina-blue;
+  text-align: center;
+  padding-bottom: 65px;
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 53px;
+  }
+}
+
+.tabs__price {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  font: {
+    family: $roboto-condensed-700;
+    size: 60px;
+  }
+  line-height: 90px;
+  color: $color-egyptian-blue;
+  padding-left: 5px;
+  padding-bottom: 37px;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    font-size: 100px;
+    color: #e8e8e8;
+    z-index: -1;
+    left: 1px;
+    bottom: 60px;
+    opacity: 0.48;
+
+    @media (max-width: $vp-1199) {
+      left: 0;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: 80px;
+      padding-right: 2px;
+      left: 21px;
+      bottom: 51px;
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+    padding-bottom: 36px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 48px;
+    }
+    line-height: 72px;
+    padding-bottom: 31px;
+  }
+}
+
+.tabs__price span {
+  color: $color-default-black;
+  font-size: 58px;
+  padding-left: 11px;
+
+  @media (max-width: $vp-767) {
+    font-size: 48px;
+    padding-left: 7px;
+  }
+}
+
+.tabs__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: {
+    family: $roboto-condensed-700;
+    size: 12px;
+  }
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  outline: 2px solid $color-resolution-blue;
+  margin-top: auto;
+  padding: 24px 23px;
+
+  @include hover-focus {
+    outline: none;
+    background: $gradient-btn-bg;
+    color: $color-default-white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    transition: 0.1s;
+  }
+}

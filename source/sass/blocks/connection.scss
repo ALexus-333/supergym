@@ -1,0 +1,10 @@
+.connection {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $color-light-slate-grey;
+  cursor: default;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+  }
+}

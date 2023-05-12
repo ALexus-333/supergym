@@ -1,0 +1,23 @@
+.header {
+  background: $gradient-bg-desktop;
+  padding-bottom: 51px;
+
+  @media (max-width: $vp-1199) {
+    background: $gradient-bg-tablet;
+    padding-bottom: 65px;
+  }
+
+  @media (max-width: $vp-767) {
+    background: $gradient-bg-mobile;
+    padding-bottom: 38px;
+  }
+}
+
+.header__preview {
+  display: grid;
+  grid-template-columns: minmax(0, 396px) minmax(0, 565px);
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}

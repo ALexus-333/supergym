@@ -1,0 +1,154 @@
+
+.intro {
+  padding-bottom: 9px;
+  cursor: default;
+
+  @media (max-width: $vp-1199) {
+    padding-bottom: 16px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 70px;
+  }
+}
+
+.intro__container {
+  display: grid;
+  grid-template-columns: minmax(0, 417px) 1fr;
+  margin: 0 auto;
+  padding: 120px 20px 0;
+  width: 100%;
+  max-width: 1200px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr;
+    padding: 104px 45px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 65px 0 0 0;
+    padding: 0;
+  }
+}
+
+.intro__content {
+  padding: 40px 0 0 60px;
+
+  @media (max-width: $vp-1199) {
+    text-align: center;
+    padding: 0 0 33px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 auto;
+    padding: 0 15px 23px 15px;
+    text-align: left;
+  }
+}
+
+.intro__p {
+  &--first {
+    margin-bottom: 10px;
+  }
+
+  &--second {
+    @media (max-width: $vp-1199) {
+      display: none;
+    }
+  }
+}
+
+.intro__title {
+  font: {
+    family: $alumni-sans-600;
+    size: 48px;
+  }
+  line-height: 57px;
+  letter-spacing: 0.03em;
+  padding-bottom: 6px;
+
+  @media (max-width: $vp-1199) {
+    font: {
+      size: 42px;
+    }
+    line-height: 46px;
+    padding: 0 16px 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 32px;
+    }
+    line-height: 35px;
+    padding-bottom: 7px;
+  }
+}
+
+.intro__subtitle {
+  font: {
+    family: $roboto-condensed-400;
+    size: 18px;
+  }
+  line-height: 27px;
+  padding-bottom: 40px;
+
+  @media (max-width: $vp-1199) {
+    padding-bottom: 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 24px;
+  }
+}
+
+.intro__text {
+  font: {
+    family: $roboto-condensed-300;
+    size: 16px;
+  }
+  line-height: 24px;
+
+  @media (max-width: $vp-1199) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 30px 0 0;
+  }
+}
+
+.intro__text span {
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
+}
+
+.intro__img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 83px;
+  background-color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 40px;
+  }
+}
+
+.intro__img img {
+  @media (max-width: $vp-1199) {
+    width: 678px;
+    height: 345px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+    max-height: 313px;
+  }
+}

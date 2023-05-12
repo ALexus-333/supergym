@@ -1,0 +1,81 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-ghost-white:                #f8f9fc;
+$color-egyptian-blue:              #103aae;
+$color-whisper:                    #e8e8e8;
+$color-torch-red:                  #ed0233;
+$color-sapphire:                   #102654;
+$color-sapphire-rgba:              rgba(16, 38, 84, 0.89);
+$color-resolution-blue:            #1c3374;
+$color-light-slate-grey:           #74819c;
+$color-dark-gray:                  #afafaf;
+$color-grey:                       #787878;
+$color-crimson:                    #d10a42;
+$color-catalina-blue:              #495a7d;
+$color-persian-blue:               #2e35ac;
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$gradient-bg-desktop:               conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-bg-tablet:                conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-bg-mobile:                conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-btn-bg:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$gradient-text:                     linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$alumni-sans-600:                   "AlumniSans-600", "Arial", sans-serif;
+$alumni-sans-700:                   "AlumniSans-700", "Arial", sans-serif;
+$alumni-sans-800:                   "AlumniSans-800", "Arial", sans-serif;
+$roboto-condensed-300:              "RobotoCondensed-300", "Arial", sans-serif;
+$roboto-condensed-400:              "RobotoCondensed-400", "Arial", sans-serif;
+$roboto-condensed-700:              "RobotoCondensed-700", "Arial", sans-serif;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-767:                            767px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1199:                           1199px;
+$vp-1200:                           1200px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

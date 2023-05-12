@@ -1,0 +1,130 @@
+.form {
+  width: 50%;
+  background-color: $color-sapphire;
+  padding-right: 72px;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.form__container {
+  max-width: 683px;
+  margin-left: auto;
+  padding: 74px 100px 0 104px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 100%;
+    padding: 63px 163px 68px 134px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 auto;
+    padding: 63px 15px 69px;
+  }
+}
+
+.form h2 {
+  font: {
+    family: $alumni-sans-800;
+    size: 54px;
+  }
+  line-height: 46px;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+  padding-bottom: 36px;
+
+  @media (max-width: $vp-1199) {
+    font: {
+      family: $alumni-sans-700;
+    }
+    font-size: 42px;
+    text-align: left;
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      family: $alumni-sans-600;
+      size: 32px;
+    }
+    line-height: 35px;
+  }
+}
+
+.form__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: $vp-1199) {
+    gap: 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 2px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.form input {
+  font: {
+    family: $roboto-condensed-400;
+    size: 14px;
+  }
+  line-height: 16px;
+  color: $color-default-white;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(116, 129, 156, 1);
+  margin: 0 30px 31px 0;
+  padding: 0 0 6px;
+
+  @media (max-width: $vp-767) {
+    margin: 0 15px 25px 0;
+    padding: 9px 0 6px;
+  }
+
+  &:focus {
+    outline: 1px solid rgba(116, 129, 156, 1);
+    border-radius: 3px;
+  }
+}
+
+.form input::placeholder {
+  font: {
+    family: $roboto-condensed-400;
+    size: 14px;
+  }
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.form button {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: {
+    family: $roboto-condensed-700;
+    size: 14px;
+  }
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  outline: 3px solid $color-default-white;
+
+  @media (max-width: $vp-767) {
+    margin-top: 15px;
+  }
+
+  @include hover-focus {
+    outline: none;
+    background: $gradient-btn-bg;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition: 0.1s;
+  }
+}

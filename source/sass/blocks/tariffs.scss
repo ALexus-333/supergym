@@ -1,0 +1,92 @@
+.tariffs {
+  position: relative;
+  background-color: $color-ghost-white;
+  cursor: default;
+}
+
+.tariffs__container {
+  padding: 122px 0 82px;
+
+  @media (max-width: $vp-1199) {
+    padding: 103px 0 58px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 65px 0 32px;
+  }
+}
+
+.tariffs__title {
+  font: {
+    family: $alumni-sans-600;
+    size: 54px;
+  }
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-right: 5px;
+
+  @media (max-width: $vp-1199) {
+    font: {
+      size: 42px;
+    }
+    line-height: 46px;
+    margin-bottom: 22px;
+    padding-right: 14px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 32px;
+    }
+    line-height: 35px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
+}
+
+.tariffs__tabs {
+  padding: 0 20px;
+  z-index: 2;
+  position: relative;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 143px;
+  }
+
+  @media (max-width: $vp-1199) {
+    padding: 0 15px;
+  }
+}
+
+.tariffs::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/barbells.png");
+  background-repeat: no-repeat;
+  width: 287px;
+  height: 415px;
+  bottom: -69px;
+  right: 0;
+
+  @media (min-resolution: $retina-dppx) and ($retina-dpi) {
+    background-image: url("../img/barbells@2x.png");
+  }
+
+  @media (max-width: $vp-1199) {
+    background-image: url("../img/barbells-tablet.png");
+    bottom: -97px;
+    width: 347px;
+
+    @media (min-resolution: $retina-dppx) and ($retina-dpi) {
+      background-image: url("../img/barbells-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
