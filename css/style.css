@@ -1508,6 +1508,10 @@ button,
   clip-path: inset(100%);
 }
 
+.none {
+  display: none;
+}
+
 .scroll-lock-ios {
   position: fixed;
   overflow: hidden;
@@ -1852,6 +1856,10 @@ button,
   height: 100px;
   position: absolute;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
 }
@@ -2333,7 +2341,7 @@ button,
   column-gap: 30px;
 }
 
-.advantages__item:nth-of-type(2n-1) {
+.advantages__item:nth-of-type(odd) {
   padding-left: 80px;
 }
 
@@ -2350,11 +2358,11 @@ button,
   bottom: -78px;
 }
 
-.advantages__list--bottom .advantages__item:not(:last-of-type):not(:nth-last-of-type(2)) {
+.advantages__list--bottom .advantages__item:last-of-type(n + 2) {
   position: relative;
 }
 
-.advantages__list--bottom .advantages__item:not(:last-of-type):not(:nth-last-of-type(2))::before {
+.advantages__list--bottom .advantages__item:last-of-type(n + 2)::before {
   position: absolute;
   content: "";
   width: 85%;
@@ -2367,7 +2375,7 @@ button,
   margin-bottom: 152px;
 }
 
-.advantages__item:nth-of-type(2n-1)::before {
+.advantages__item:nth-of-type(even)::before {
   right: 0;
 }
 
@@ -2546,25 +2554,7 @@ button,
 
 .trainers__button-prev,
 .trainers__button-next {
-  position: absolute;
   top: 52%;
-  margin-top: 31px;
-  background-color: transparent;
-  border: 0;
-  background-image: url("../img/svg/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 34px;
-  z-index: 1;
-  cursor: pointer;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.trainers__button-prev:hover,
-.trainers__button-next:hover {
-  opacity: 0.5;
 }
 
 .trainers__button-prev {
@@ -2579,16 +2569,6 @@ button,
 }
 
 /* Показ контента*/
-
-.none {
-  display: none;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .sale {
   margin-top: 151px;
@@ -2868,25 +2848,7 @@ button,
 
 .reviews__button-prev,
 .reviews__button-next {
-  position: absolute;
   top: 51%;
-  margin-top: 29px;
-  background-color: transparent;
-  border: 0;
-  background-image: url("../img/svg/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 34px;
-  z-index: 1;
-  cursor: pointer;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.reviews__button-prev:hover,
-.reviews__button-next:hover {
-  opacity: 0.5;
 }
 
 .reviews__button-prev {
@@ -2949,7 +2911,7 @@ button,
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgb(116, 129, 156);
-  margin: 0 30px 31px 0;
+  margin: 0 30px 36px 0;
   padding: 0 0 6px;
 }
 
@@ -2959,38 +2921,23 @@ button,
 }
 
 .form input::-webkit-input-placeholder {
-  font-family: "RobotoCondensed-400", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  opacity: 1;
 }
 
 .form input::-moz-placeholder {
-  font-family: "RobotoCondensed-400", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  opacity: 1;
 }
 
 .form input:-ms-input-placeholder {
-  font-family: "RobotoCondensed-400", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  opacity: 1;
 }
 
 .form input::-ms-input-placeholder {
-  font-family: "RobotoCondensed-400", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  opacity: 1;
 }
 
 .form input::placeholder {
-  font-family: "RobotoCondensed-400", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  opacity: 1;
 }
 
 .form button {
@@ -3172,6 +3119,30 @@ button,
   transition: 0.3s;
   -webkit-filter: drop-shadow(0 0 5px #ffffff);
   filter: drop-shadow(0 0 5px #ffffff);
+}
+
+.slider-btn {
+  position: absolute;
+  margin-top: 31px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 34px;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider-btn:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 1200px) {
@@ -3500,7 +3471,7 @@ button,
     width: auto;
   }
 
-  .advantages__item:nth-of-type(2n-1) {
+  .advantages__item:nth-of-type(odd) {
     padding: 0;
   }
 
@@ -3508,7 +3479,7 @@ button,
     display: none;
   }
 
-  .advantages__list--bottom .advantages__item:not(:last-of-type):not(:nth-last-of-type(2))::before {
+  .advantages__list--bottom .advantages__item:last-of-type(n + 2)::before {
     display: none;
   }
 
@@ -3577,11 +3548,6 @@ button,
 
   .trainers__info ul {
     margin-left: 48px;
-  }
-
-  .trainers__button-prev,
-  .trainers__button-next {
-    margin-top: 16px;
   }
 
   .trainers__button-prev {
@@ -3709,9 +3675,6 @@ button,
 
   .reviews__button-prev,
   .reviews__button-next {
-    margin-top: 15px;
-    width: 30px;
-    height: 35px;
     top: 54%;
   }
 
@@ -3804,6 +3767,10 @@ button,
 
   .footer__social-list {
     margin: 0 -6px 0 20px;
+  }
+
+  .slider-btn {
+    margin-top: 16px;
   }
 }
 
@@ -3980,7 +3947,7 @@ button,
   .tariffs__title {
     font-size: 32px;
     line-height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding-right: 10px;
   }
 
@@ -3994,7 +3961,15 @@ button,
 
   .tabs__btn {
     font-size: 16px;
-    padding: 0 23px 12px;
+    padding: 0 14px 11px 0;
+  }
+
+  .tabs__btn:nth-child(2n) {
+    padding: 0 46px 11px 32px;
+  }
+
+  .tabs__btn:nth-child(3n) {
+    padding-right: 0;
   }
 
   .tabs__list {
@@ -4090,7 +4065,7 @@ button,
     padding: 0 35px;
   }
 
-  .advantages__item:nth-of-type(2n-1) {
+  .advantages__item:nth-of-type(odd) {
     padding: 0 35px;
   }
 
@@ -4143,12 +4118,6 @@ button,
 
   .trainers__info ul {
     margin-left: 18px;
-  }
-
-  .trainers__button-prev,
-  .trainers__button-next {
-    background-size: 10px 19px;
-    margin-top: 18px;
   }
 
   .trainers__button-prev {
@@ -4289,18 +4258,15 @@ button,
 
   .reviews__button-prev,
   .reviews__button-next {
-    height: 37px;
-    background-size: 10px 19px;
-    margin-top: 19px;
-    top: 50%;
+    top: 214px;
   }
 
   .reviews__button-prev {
-    left: 5px;
+    left: 4px;
   }
 
   .reviews__button-next {
-    right: 5px;
+    right: 4px;
   }
 
   .form__container {
@@ -4409,6 +4375,12 @@ button,
     width: -moz-fit-content;
     width: fit-content;
     margin-left: 0;
+  }
+
+  .slider-btn {
+    background-size: 10px 19px;
+    margin-top: 15px;
+    height: 37px;
   }
 }
 
