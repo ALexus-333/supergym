@@ -50,6 +50,7 @@
   height: 100px;
   position: absolute;
   cursor: pointer;
+  user-select: none;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
 

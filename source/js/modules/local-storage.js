@@ -13,7 +13,7 @@ const getFormInputs = () => {
   }
 };
 
-export const onFormSubmit = () => {
+export const initFormSubmit = () => {
   if (form) {
     form.addEventListener('submit', () => {
       const {inputName, inputPhone} = getFormInputs();

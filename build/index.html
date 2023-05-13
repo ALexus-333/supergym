@@ -38,7 +38,7 @@
             </div>
             <div class="menu__phone-container">
               <span class="menu__phone">
-                <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                <a href="tel:+7-800-555-55-55">8-800-555-55-55</a>
               </span>
             </div>
           </div>
@@ -111,7 +111,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" loading="lazy" allowfullscreen>
               </iframe>
               <button class="video__play" type="button">
-                <img src="img/svg/play-btn.svg" width="100" height="100" alt="Воспроизвести видео.">
+                <span class="visually-hidden">Воспроизвести видео.</span>
+                <img src="img/svg/play-btn.svg" width="100" height="100" aria-hidden="true" alt="">
               </button>
             </div>
           </div>
@@ -120,11 +121,11 @@
           <div class="tariffs__container container">
             <h2 class="tariffs__title">Абонементы</h2>
             <div class="tariffs__tabs tabs">
-              <nav class="tabs__nav">
-                <a class="tabs__btn no-js active" data-tab="#tab-01">1 месяц</a>
-                <a class="tabs__btn no-js" data-tab="#tab-02">6 месяцев</a>
-                <a class="tabs__btn no-js" data-tab="#tab-03">12 месяцев</a>
-              </nav>
+              <div class="tabs__nav">
+                <button class="tabs__btn no-js active" type="button" data-tab="#tab-01">1 месяц</button>
+                <button class="tabs__btn no-js" type="button" data-tab="#tab-02">6 месяцев</button>
+                <button class="tabs__btn no-js" type="button" data-tab="#tab-03">12 месяцев</button>
+              </div>
               <div class="tabs__body">
                 <ul class="tabs__list no-js active" id="tab-01">
                   <li class="tabs__wrapper">
@@ -267,7 +268,7 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/anna-pavlova.webp 1x, img/trainers/anna-pavlova@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/anna-pavlova.jpg" srcset="img/trainers/anna-pavlova@2x.jpg 2x" alt="Фото тренера Анны Павловой">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/anna-pavlova.jpg" srcset="img/trainers/anna-pavlova@2x.jpg 2x" alt="Фото тренера Анны Павловой.">
                     </picture>
                     <h3>Анна Павлова</h3>
                   </div>
@@ -285,7 +286,7 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/alexey-lavrov.webp 1x, img/trainers/alexey-lavrov@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/alexey-lavrov.jpg" srcset="img/trainers/alexey-lavrov@2x.jpg 2x" alt="Фото тренера Алексея Лаврова">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/alexey-lavrov.jpg" srcset="img/trainers/alexey-lavrov@2x.jpg 2x" alt="Фото тренера Алексея Лаврова.">
                     </picture>
                     <h3>Алексей Лавров</h3>
                   </div>
@@ -303,7 +304,7 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/alexander-pashkov.webp 1x, img/trainers/alexander-pashkov@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/alexander-pashkov.jpg" srcset="img/trainers/alexander-pashkov@2x.jpg 2x" alt="Фото тренера Александра Пашкова">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/alexander-pashkov.jpg" srcset="img/trainers/alexander-pashkov@2x.jpg 2x" alt="Фото тренера Александра Пашкова.">
                     </picture>
                     <h3>Александр Пашков</h3>
                   </div>
@@ -321,7 +322,7 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/maria-ketova.webp 1x, img/trainers/maria-ketova@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/maria-ketova.jpg" srcset="img/trainers/maria-ketova@2x.jpg 2x" alt="Фото тренера Марии Кетовой">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/maria-ketova.jpg" srcset="img/trainers/maria-ketova@2x.jpg 2x" alt="Фото тренера Марии Кетовой.">
                     </picture>
                     <h3>Мария Кетова</h3>
                   </div>
@@ -339,12 +340,12 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/anna-pavlova.webp 1x, img/trainers/anna-pavlova@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/anna-pavlova.jpg" srcset="img/trainers/anna-pavlova@2x.jpg 2x" alt="Фото тренера Анны Павловой">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/anna-pavlova.jpg" srcset="img/trainers/anna-pavlova@2x.jpg 2x" alt="Фото тренера Алины Марковой.">
                     </picture>
-                    <h3>Анна Павлова</h3>
+                    <h3>Алина Маркова</h3>
                   </div>
                   <div class="trainers__info">
-                    <h3>Анна Павлова</h3>
+                    <h3>Алина Маркова</h3>
                     <span>CrossFit</span>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -357,12 +358,12 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/alexey-lavrov.webp 1x, img/trainers/alexey-lavrov@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/alexey-lavrov.jpg" srcset="img/trainers/alexey-lavrov@2x.jpg 2x" alt="Фото тренера Алексея Лаврова">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/alexey-lavrov.jpg" srcset="img/trainers/alexey-lavrov@2x.jpg 2x" alt="Фото тренера Андрея Волова.">
                     </picture>
-                    <h3>Алексей Лавров</h3>
+                    <h3>Андрей Волов</h3>
                   </div>
                   <div class="trainers__info">
-                    <h3>Алексей Лавров</h3>
+                    <h3>Андрей Волов</h3>
                     <span>CrossFit</span>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -375,12 +376,12 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/alexander-pashkov.webp 1x, img/trainers/alexander-pashkov@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/alexander-pashkov.jpg" srcset="img/trainers/alexander-pashkov@2x.jpg 2x" alt="Фото тренера Александра Пашкова">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/alexander-pashkov.jpg" srcset="img/trainers/alexander-pashkov@2x.jpg 2x" alt="Фото тренера Дмитрия Дунова.">
                     </picture>
-                    <h3>Александр Пашков</h3>
+                    <h3>Дмитрий Дунов</h3>
                   </div>
                   <div class="trainers__info">
-                    <h3>Александр Пашков</h3>
+                    <h3>Дмитрий Дунов</h3>
                     <span>CrossFit</span>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -393,12 +394,12 @@
                   <div class="trainers__photo">
                     <picture>
                       <source srcset="img/trainers/maria-ketova.webp 1x, img/trainers/maria-ketova@2x.webp 2x" type="image/webp">
-                      <img width="260" height="294" loading="lazy" src="img/trainers/maria-ketova.jpg" srcset="img/trainers/maria-ketova@2x.jpg 2x" alt="Фото тренера Марии Кетовой">
+                      <img width="260" height="294" loading="lazy" src="img/trainers/maria-ketova.jpg" srcset="img/trainers/maria-ketova@2x.jpg 2x" alt="Фото тренера Екатерины Лонз.">
                     </picture>
-                    <h3>Мария Кетова</h3>
+                    <h3>Екатерина Лонз</h3>
                   </div>
                   <div class="trainers__info">
-                    <h3>Мария Кетова</h3>
+                    <h3>Екатерина Лонз</h3>
                     <span>CrossFit</span>
                     <ul>
                       <li>Certified Level 3 Trainer</li>
@@ -409,8 +410,12 @@
                 </li>
               </ul>
             </div>
-            <button class="trainers__button-prev" type="button"></button>
-            <button class="trainers__button-next" type="button"></button>
+            <button class="trainers__button-prev slider-btn" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <button class="trainers__button-next slider-btn" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
           </div>
         </section>
         <section class="advantages">
@@ -521,8 +526,12 @@
                 </li>
               </ul>
             </div>
-            <button class="reviews__button-prev" type="button"></button>
-            <button class="reviews__button-next" type="button"></button>
+            <button class="reviews__button-prev slider-btn" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <button class="reviews__button-next slider-btn" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
           </div>
         </section>
         <section class="connection">
@@ -531,12 +540,10 @@
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <div class="form__fields">
-                  <label>
-                    <input type="text" name="Имя" placeholder="Имя" required>
-                  </label>
-                  <label>
-                    <input type="tel" name="Телефон" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
-                  </label>
+                  <label class="visually-hidden" for="form-name">Введите своё имя.</label>
+                    <input type="text" id="form-name" name="Имя" placeholder="Имя" required>
+                  <label class="visually-hidden" for="form-phone">Введите свой номер мобильного телефона.</label>
+                    <input type="tel" id="form-phone" name="Телефон" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
                 </div>
                 <button class="btn" type="submit">Отправить</button>
               </form>
@@ -560,7 +567,7 @@
                 <ul class="contacts__list">
                   <li>
                     <h3>Телефон:</h3>
-                    <a href="tel:88005555555">8-800-555-55-55</a>
+                    <a href="tel:+7-800-555-55-55">8-800-555-55-55</a>
                   </li>
                   <li>
                     <h3>Email:</h3>
@@ -601,24 +608,24 @@
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://htmlacademy.ru/">
-                <span class="visually-hidden">Мы Вконтакте</span>
-                <svg width="25" height="25">
+                <span class="visually-hidden">Мы Вконтакте.</span>
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://htmlacademy.ru/">
-                <span class="visually-hidden">Мы в Одноклассниках</span>
-                <svg width="25" height="25">
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://htmlacademy.ru/">
-                <span class="visually-hidden">Мы на Реддите</span>
-                <svg width="25" height="25">
+                <span class="visually-hidden">Мы на Реддите.</span>
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#reddit"></use>
                 </svg>
               </a>

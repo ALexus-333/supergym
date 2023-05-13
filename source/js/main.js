@@ -1,11 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {onPlayClick} from './modules/video';
-import {onTabBtnClick} from './modules/tabs';
+import {initPlayClick} from './modules/video';
+import {initTabBtnClick} from './modules/tabs';
 import {createTrainersSlider} from './modules/trainers-slider';
 import {createReviewsSlider} from './modules/reviews-slider';
-import {onFormSubmit} from './modules/local-storage';
-import {onCardClick} from './modules/show-card';
+import {initFormSubmit} from './modules/local-storage';
+import {initCardClick} from './modules/show-card';
 
 // ---------------------------------
 
@@ -15,12 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  onPlayClick();
-  onTabBtnClick();
+  initPlayClick();
+  initTabBtnClick();
   createTrainersSlider();
   createReviewsSlider();
-  onFormSubmit();
-  onCardClick();
+  initFormSubmit();
+  initCardClick();
 
   // Modules
   // ---------------------------------

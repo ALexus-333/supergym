@@ -161,36 +161,14 @@
 
 .reviews__button-prev,
 .reviews__button-next {
-  position: absolute;
   top: 51%;
-  margin-top: 29px;
-  background-color: transparent;
-  border: 0;
-  background-image: url("../img/svg/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 34px;
-  z-index: 1;
-  cursor: pointer;
-  box-sizing: content-box;
 
   @media (max-width: $vp-1199) {
-    margin-top: 15px;
-    width: 30px;
-    height: 35px;
     top: 54%;
   }
 
   @media (max-width: $vp-767) {
-    height: 37px;
-    background-size: 10px 19px;
-    margin-top: 19px;
-    top: 50%;
-  }
-
-  &:hover {
-    opacity: 0.5;
+    top: 214px;
   }
 }
 
@@ -202,7 +180,7 @@
   }
 
   @media (max-width: $vp-767) {
-    left: 5px;
+    left: 4px;
   }
 }
 
@@ -215,6 +193,6 @@
   }
 
   @media (max-width: $vp-767) {
-    right: 5px;
+    right: 4px;
   }
 }

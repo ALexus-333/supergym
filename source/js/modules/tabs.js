@@ -3,7 +3,7 @@ import {removeClass} from '../utils/remove-class';
 const tabBtns = document.querySelectorAll('.tabs__btn');
 const tabLists = document.querySelectorAll('.tabs__list');
 
-export const onTabBtnClick = () => {
+export const initTabBtnClick = () => {
   removeClass(tabBtns);
   removeClass(tabLists);
 

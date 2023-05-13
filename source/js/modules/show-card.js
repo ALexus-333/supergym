@@ -1,20 +1,16 @@
 const cards = document.querySelectorAll('.trainers__item');
 
-const clickOnCard = (e) => {
+const clickOnCard = (event) => {
   cards.forEach((info) => {
-    const cardsInfo = info.querySelector('.trainers__info');
     const cardsTitle = info.querySelector('h3');
-    cardsInfo.classList.remove('flex');
     cardsTitle.classList.remove('none');
   });
 
-  const card = e.currentTarget;
+  const card = event.currentTarget;
 
-  const cardInfo = card.querySelector('.trainers__info');
   const cardPhoto = card.querySelector('.trainers__photo');
   const cardTitle = cardPhoto.querySelector('h3');
 
-  cardInfo.classList.add('flex');
   cardTitle.classList.add('none');
 };
 
@@ -29,10 +25,8 @@ const showCardInfo = () => {
 const stopShowCardInfoByClick = () => {
   if (cards) {
     cards.forEach((item) => {
-      const cardsInfo = item.querySelector('.trainers__info');
       const cardsTitle = item.querySelector('h3');
 
-      cardsInfo.classList.remove('flex');
       cardsTitle.classList.remove('none');
 
       item.removeEventListener('click', clickOnCard);
@@ -40,7 +34,7 @@ const stopShowCardInfoByClick = () => {
   }
 };
 
-export const onCardClick = () => {
+export const initCardClick = () => {
   let isByClick = false;
 
   if (window.innerWidth <= 1199) {

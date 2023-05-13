@@ -197,32 +197,7 @@
 
 .trainers__button-prev,
 .trainers__button-next {
-  position: absolute;
   top: 52%;
-  margin-top: 31px;
-  background-color: transparent;
-  border: 0;
-  background-image: url("../img/svg/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 34px;
-  z-index: 1;
-  cursor: pointer;
-  box-sizing: content-box;
-
-  @media (max-width: $vp-1199) {
-    margin-top: 16px;
-  }
-
-  @media (max-width: $vp-767) {
-    background-size: 10px 19px;
-    margin-top: 18px;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
 }
 
 .trainers__button-prev {
@@ -295,12 +270,4 @@
   .trainers__item:focus .trainers__photo h3 {
     display: none;
   }
-}
-
-.none {
-  display: none;
-}
-
-.flex {
-  display: flex;
 }
