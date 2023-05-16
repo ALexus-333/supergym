@@ -2358,11 +2358,11 @@ button,
   bottom: -78px;
 }
 
-.advantages__list--bottom .advantages__item:last-of-type(n + 2) {
+.advantages__list--bottom .advantages__item:nth-last-of-type(n + 3) {
   position: relative;
 }
 
-.advantages__list--bottom .advantages__item:last-of-type(n + 2)::before {
+.advantages__list--bottom .advantages__item:nth-last-of-type(n + 3)::before {
   position: absolute;
   content: "";
   width: 85%;
@@ -2523,7 +2523,7 @@ button,
   display: none;
 }
 
-.trainers__info h3 {
+.trainers__info p {
   font-family: "RobotoCondensed-700", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
@@ -2713,7 +2713,7 @@ button,
   box-sizing: border-box;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 13px 28px;
+  padding: 12px 28px;
   cursor: default;
 }
 
@@ -2739,7 +2739,7 @@ button,
   text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   letter-spacing: 0.05em;
-  margin: auto 0 15px;
+  margin: auto 0 16px;
   cursor: pointer;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3479,7 +3479,7 @@ button,
     display: none;
   }
 
-  .advantages__list--bottom .advantages__item:last-of-type(n + 2)::before {
+  .advantages__list--bottom .advantages__item:nth-last-of-type(n + 3)::before {
     display: none;
   }
 
