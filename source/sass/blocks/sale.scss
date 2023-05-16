@@ -227,7 +227,7 @@
   border-image-slice: 1;
   box-sizing: border-box;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 13px 28px;
+  padding: 12px 28px;
   cursor: default;
 
   @media (max-width: $vp-1199) {
@@ -280,7 +280,7 @@
   text-transform: uppercase;
   border-bottom: 1px solid $color-resolution-blue;
   letter-spacing: 0.05em;
-  margin: auto 0 15px;
+  margin: auto 0 16px;
   cursor: pointer;
   transition: 0.5s;
 

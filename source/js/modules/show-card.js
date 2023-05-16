@@ -9,7 +9,7 @@ const clickOnCard = (event) => {
   const card = event.currentTarget;
 
   const cardPhoto = card.querySelector('.trainers__photo');
-  const cardTitle = cardPhoto.querySelector('h3');
+  const cardTitle = cardPhoto.querySelector('p');
 
   cardTitle.classList.add('none');
 };

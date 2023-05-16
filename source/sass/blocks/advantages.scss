@@ -189,7 +189,7 @@
   }
 }
 
-.advantages__list--bottom .advantages__item:last-of-type(n + 2) {
+.advantages__list--bottom .advantages__item:nth-last-of-type(n + 3) {
   position: relative;
 
   &::before {
