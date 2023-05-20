@@ -1,24 +1,25 @@
 .video {
-  display: block;
+  position: absolute;
   width: 364px;
   height: 228px;
-  position: relative;
-  bottom: 113px;
-  left: 437px;
+  margin-top: 408px;
+  left: 457px;
+
 
   @media (max-width: $vp-1199) {
-    width: 266px;
-    height: 167px;
-    margin: 0 auto;
-    bottom: 84px;
+    position: relative;
+    width: 39.2%;
+    height: 48.7%;
+    margin-top: 0;
     left: 0;
+    transform: translate(77.5%, -103.5%);
   }
 
   @media (max-width: $vp-767) {
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
   }
 }
 
@@ -35,13 +36,9 @@
   width: 100%;
   background-color: $color-default-white;
 
-  @media (max-width: $vp-1199) {
-    width: 266px;
-    height: 167px;
-  }
-
   @media (max-width: $vp-767) {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -57,11 +54,16 @@
   @media (max-width: $vp-1199) {
     width: 72px;
     height: 75px;
-    top: calc(50% - 38px);
+    top: calc(50% + 5px);
     left: calc(50% - 37px);
   }
 
+  @media (min-width: 950px) and (max-width: 1199px) {
+    top: calc(50% + 30px);
+  }
+
   @media (max-width: $vp-767) {
+    top: calc(50% - 38px);
     left: calc(50% - 35px);
   }
 }

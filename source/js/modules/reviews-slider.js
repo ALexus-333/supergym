@@ -12,6 +12,7 @@ export const createReviewsSlider = () => {
     },
     slidesPerView: 1,
     spaceBetween: 15,
+    loop: true,
     autoHeight: true,
   });
 };

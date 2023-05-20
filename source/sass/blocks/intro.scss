@@ -1,10 +1,10 @@
 
 .intro {
-  padding-bottom: 9px;
+  padding-bottom: 236px;
   cursor: default;
 
   @media (max-width: $vp-1199) {
-    padding-bottom: 16px;
+    padding-bottom: 17px;
   }
 
   @media (max-width: $vp-767) {
@@ -13,6 +13,7 @@
 }
 
 .intro__container {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 417px) 1fr;
   margin: 0 auto;
@@ -123,6 +124,16 @@
   }
 }
 
+.intro__picture {
+  position: relative;
+  place-self: start end;
+
+  @media (max-width: $vp-1199) {
+    place-self: center;
+    width: 100%;
+  }
+}
+
 .intro__img {
   max-width: 100%;
   max-height: 100%;
@@ -130,8 +141,6 @@
   background-color: $color-default-white;
 
   @media (max-width: $vp-1199) {
-    display: flex;
-    justify-content: center;
     padding-left: 0;
   }
 
@@ -142,13 +151,8 @@
 
 .intro__img img {
   @media (max-width: $vp-1199) {
-    width: 678px;
-    height: 345px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-  }
-
-  @media (max-width: $vp-767) {
-    min-width: 320px;
-    max-height: 313px;
   }
 }

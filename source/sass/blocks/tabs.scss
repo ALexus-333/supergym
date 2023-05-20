@@ -198,18 +198,12 @@
     font-size: 100px;
     color: #e8e8e8;
     z-index: -1;
-    left: 1px;
     bottom: 60px;
     opacity: 0.48;
-
-    @media (max-width: $vp-1199) {
-      left: 0;
-    }
 
     @media (max-width: $vp-767) {
       font-size: 80px;
       padding-right: 2px;
-      left: 21px;
       bottom: 51px;
     }
   }

@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 69px;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
   cursor: default;
 
   @media (max-width: $vp-1199) {
@@ -161,10 +161,10 @@
 
 .reviews__button-prev,
 .reviews__button-next {
-  top: 51%;
+  top: 173px;
 
   @media (max-width: $vp-1199) {
-    top: 54%;
+    top: 178px;
   }
 
   @media (max-width: $vp-767) {
@@ -189,7 +189,7 @@
   transform: rotate(180deg);
 
   @media (max-width: $vp-1199) {
-    right: 38px;
+    right: 37px;
   }
 
   @media (max-width: $vp-767) {
