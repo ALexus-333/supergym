@@ -3760,7 +3760,10 @@ button,
   }
 
   .form__fields {
-    gap: 60px;
+    gap: 0;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
   }
 
   .contacts {
