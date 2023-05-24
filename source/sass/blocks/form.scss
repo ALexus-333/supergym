@@ -59,7 +59,8 @@
   gap: 30px;
 
   @media (max-width: $vp-1199) {
-    gap: 60px;
+    gap: 0;
+    column-gap: 60px;
   }
 
   @media (max-width: $vp-767) {
