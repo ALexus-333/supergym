@@ -2624,7 +2624,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffffff;
-  padding: 57px 71px 62px;
+  padding: 57px 72px 62px;
 }
 @media (max-width: 1199px) {
   .tabs__list div {
