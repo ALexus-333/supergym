@@ -4450,6 +4450,10 @@ button,
     padding: 0 40px;
   }
 
+  .tabs__list div {
+    padding: 57px 58px 62px;
+  }
+
   .trainers__button-prev {
     left: 0;
   }
