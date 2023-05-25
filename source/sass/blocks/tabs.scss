@@ -111,6 +111,10 @@
   background-color: $color-default-white;
   padding: 57px 72px 62px;
 
+  @media (min-width: 1200px) and (max-width: 1280px) {
+    padding: 57px 58px 62px;
+  }
+
   @media (max-width: $vp-1199) {
     padding: 56px 113px 63px;
   }

@@ -2626,6 +2626,11 @@ button,
   background-color: #ffffff;
   padding: 57px 72px 62px;
 }
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .tabs__list div {
+    padding: 57px 58px 62px;
+  }
+}
 @media (max-width: 1199px) {
   .tabs__list div {
     padding: 56px 113px 63px;
