@@ -3868,14 +3868,14 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding-top: 44px;
+    padding-top: 92px;
     padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
   .reviews {
-    padding-top: 16px;
-    padding-bottom: 70px;
+    padding-top: 63px;
+    padding-bottom: 71px;
   }
 }
 
@@ -3973,7 +3973,7 @@ button,
        -moz-column-gap: 0;
             column-gap: 0;
     row-gap: 14px;
-    padding: 47px 25px 29px;
+    padding: 48px 25px 28px;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -4173,7 +4173,7 @@ button,
 @media (max-width: 767px) {
   .form__container {
     margin: 0 auto;
-    padding: 63px 15px 72px;
+    padding: 64px 15px 72px;
   }
 }
 
