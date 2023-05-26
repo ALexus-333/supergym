@@ -2156,8 +2156,8 @@ button,
 .promo__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr minmax(490fr 660fr);
-  grid-template-columns: 1fr minmax(490fr 660fr);
+  -ms-grid-columns: 490fr 660fr;
+  grid-template-columns: 490fr 660fr;
   margin-top: 118px;
   margin-bottom: 54px;
 }
