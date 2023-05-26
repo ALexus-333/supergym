@@ -85,6 +85,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
+  @media (min-width: 1280px) {
+    width: 1080px;
+  }
+
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr;
     gap: 0;

@@ -2590,6 +2590,11 @@ button,
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
+@media (min-width: 1280px) {
+  .tabs__list {
+    width: 1080px;
+  }
+}
 @media (max-width: 1199px) {
   .tabs__list {
     -ms-grid-columns: 1fr;
